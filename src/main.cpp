@@ -1,7 +1,9 @@
 /*
  * TNode.h
- * Date: January 20, 2013
- * Author: Milot Shala
+ *
+ * @author: Milot Shala <milot.shala@gmail.com>
+ * @date: January 20, 2013
+ *
  */
 
 #include <iostream>

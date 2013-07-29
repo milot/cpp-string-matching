@@ -4,6 +4,7 @@
  * Automaton.h
  *
  * @author: Milot Shala <milot.shala@gmail.com>
+ * @date: January 20, 2013
  *
  * @reference: http://www.win.tue.nl/~watson/2R080/opdracht/p333-aho-corasick.pdf
  * @reference: http://www.cs.uku.fi/~kilpelai/BSA05/lectures/slides04.pdf
