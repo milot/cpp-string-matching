@@ -1,4 +1,4 @@
-String Matchin Algorithm
+String Matching in C++
 ========================
 
 Introduction
