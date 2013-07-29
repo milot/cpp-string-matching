@@ -23,7 +23,7 @@ int main()
     stringMatchingObject.buildIndex(text);
 
     std::cout << "Match: " << stringMatchingObject.searchString("A very long text which MentionsCorvoAttano"
-                                         "in ambiguous way to test aho corasick implementation") << std::endl;
+                                         "in ambiguous way to test string matching") << std::endl;
 
     return 0;
 }
