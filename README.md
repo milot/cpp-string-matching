@@ -4,8 +4,7 @@ String Matching in C++
 Introduction
 ------------
 
-This is a very simple string matching algorithm written in C++ that uses a finite state machine and a trie to do the matching. Furthermore this 
-algorithm is based on a paper written in 1975 by Alfred Aho and Margaret J. Corasick. Furthermore this is only a weekend project that I hacked on 
+This is a very simple string matching algorithm written in C++ that uses a finite state machine and a trie to do the matching. Furthermore this is only a weekend project that I hacked on 
 some time ago and never published it, until now.
 
 String Matching Algorithm
