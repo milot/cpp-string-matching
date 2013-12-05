@@ -9,24 +9,23 @@
 #include <iostream>
 #include "StringMatching.h"
 
-int main()
-{    
+int main() {
 
-    /*
-     * Example usage of the StringMatching class.
-     */
-    std::string text = "He is capable of using unusual gadgetry,"
-                       "which aids him in situations that require stealth, "
-                       "and also in head-on encounters. Corvo is highly proficient"
-                       "with both ranged and melee weapons, such as the sword and the crossbow.";
+  /*
+   * Example usage of the StringMatching class.
+   */
+  std::string text = "He is capable of using unusual gadgetry,"
+                     "which aids him in situations that require stealth, "
+                     "and also in head-on encounters. Corvo is highly proficient"
+                     "with both ranged and melee weapons, such as the sword and the crossbow.";
 
-    StringMatching stringMatchingObject;
+  StringMatching stringMatchingObject;
 
-    stringMatchingObject.buildIndex(text);
+  stringMatchingObject.buildIndex(text);
 
-    std::cout << "Match: " << stringMatchingObject.searchString("A very long text which MentionsCorvoAttano"
-                                         "in ambiguous way to test string matching") << std::endl;
+  std::cout << "Match: " << stringMatchingObject.searchString("A very long text which MentionsCorvoAttano"
+                                       "in ambiguous way to test string matching") << std::endl;
 
-    return 0;
+  return 0;
 }
 

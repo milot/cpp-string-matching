@@ -28,24 +28,21 @@
 #include <memory>
 
 
-class Automaton
-{
+class Automaton {
 public:
-    Automaton();
-    /**
-     * @brief nextState
-     * @return next state, whereas nextState->at(0) denotes fail state.
-     */
-    std::shared_ptr<std::vector<std::shared_ptr<Automaton> > > nextState();
+  Automaton();
+  /**
+   * @brief nextState
+   * @return next state, whereas nextState->at(0) denotes fail state.
+   */
+  std::shared_ptr<std::vector<std::shared_ptr<Automaton> > > nextState();
 
-    /**
-     * @brief acceptedStateValues are the state integers as presented in the paper.
-     * @return
-     */
-    std::shared_ptr<std::vector<int> > acceptedStateValues();
-
-
+  /**
+   * @brief acceptedStateValues are the state integers as presented in the paper.
+   * @return
+   */
+  std::shared_ptr<std::vector<int> > acceptedStateValues();
 private:
-    std::shared_ptr<std::vector<int> >                          m_AcceptedStateValues;
-    std::shared_ptr<std::vector<std::shared_ptr<Automaton> > >   m_NextState;
+  std::shared_ptr<std::vector<int> >                          m_AcceptedStateValues;
+  std::shared_ptr<std::vector<std::shared_ptr<Automaton> > >  m_NextState;
 };

@@ -40,46 +40,45 @@ class TNode;
  * failure function, it uses breadth first search strategy as described in the
  * Aho Corasick paper of 1975.
  */
-class StringMatching
-{
+class StringMatching {
 public:
-    explicit StringMatching();
+  explicit StringMatching();
 
-    /**
-     * @brief searchString function searches for matched string and returns it.
-     * @param word input
-     * @return the matched string
-     *
-     */
-    std::string searchString(const std::string &word);
+  /**
+   * @brief searchString function searches for matched string and returns it.
+   * @param word input
+   * @return the matched string
+   *
+   */
+  std::string searchString(const std::string &word);
 
-    /**
-     * @brief createAutomaton function creates automaton state and inserts it in the pattern
-     * matching automaton list to keep track.
-     * @return returns the new automaton.
-     */
-    std::shared_ptr<Automaton> createAutomaton();
+  /**
+   * @brief createAutomaton function creates automaton state and inserts it in the pattern
+   * matching automaton list to keep track.
+   * @return returns the new automaton.
+   */
+  std::shared_ptr<Automaton> createAutomaton();
 
-    /**
-     * @brief tokenizeWords function is used to return list of tokens for a given string
-     * @param string
-     * @return list of tokens stripped from the given string
-     */
-    std::vector<std::string> tokenizeWords(const std::string &string);
+  /**
+   * @brief tokenizeWords function is used to return list of tokens for a given string
+   * @param string
+   * @return list of tokens stripped from the given string
+   */
+  std::vector<std::string> tokenizeWords(const std::string &string);
 
-    /**
-     * @brief buildIndex function generates the string matching index,
-     * creates simple trie data structure, failure and goto functions for the
-     * given piece of string (or a larger text). Internally it uses also tokenizeWords
-     * function to get the individual tokens of words to build the trie with.
-     * @param words
-     * @return
-     */
-    std::shared_ptr<Automaton> buildIndex(const std::string &words);
+  /**
+   * @brief buildIndex function generates the string matching index,
+   * creates simple trie data structure, failure and goto functions for the
+   * given piece of string (or a larger text). Internally it uses also tokenizeWords
+   * function to get the individual tokens of words to build the trie with.
+   * @param words
+   * @return
+   */
+  std::shared_ptr<Automaton> buildIndex(const std::string &words);
 
 private:
-    std::vector<std::shared_ptr<Automaton> >   pmaList;
-    std::vector<std::string>                  m_WordsList;
-    std::shared_ptr<Automaton>                 rootNode;
+  std::vector<std::shared_ptr<Automaton> >   pmaList;
+  std::vector<std::string>                   m_WordsList;
+  std::shared_ptr<Automaton>                 rootNode;
 
 };
